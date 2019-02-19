@@ -1,0 +1,23 @@
+<!--pages/index.wxml-->
+<view class='container'>
+  <view class='bg'>
+    <image src="/images/1.png" mode='widthFix'></image>
+  </view>
+  <form class='query-from' bindsubmit='query'>
+    <view class='city'>
+      <input type='text' value='南昌' name = "from" />
+      <view class='transform'>
+        <image src="/images/tab.png"></image>
+      </view>
+      <input type='text'  value="上海" name = "to"  />
+    </view>
+    <view class='time'>
+      <picker mode="date" bindchange='timeChange' start="{{trainDate}}" end="">
+        <input disabled name="time" value="{{trainDate}}"/>
+      </picker>
+    </view>
+    <view class='btn'>
+      <button form-type='submit'>查询</button>
+    </view>
+  </form>
+</view>

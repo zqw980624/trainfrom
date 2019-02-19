@@ -1,0 +1,47 @@
+<!--pages/home/list.wxml-->
+<view class='container'>
+  <view class='fixTop'>
+    <navigator open-type="navigateBack"  delta= "1" class='header'>
+      <image src="/images/arrow.png"></image>
+      <text>{{from}} - {{to}}</text>
+    </navigator>
+  </view>
+  <view class='fromTo'>
+    <view>
+      <image src="/images/train.png"></image>
+    </view>
+    <view class="city">{{from}} - {{to}}</view>
+    <view>{{trainDate}}</view>
+  </view>
+  <view class='list-container'>
+   
+   <view wx:for = "{{trains}}" wx:for-item="trains" class='list'>
+    <view class='list-top'>
+      <view class='list-top-one'>
+         <view class='blue'>{{trains.fromTime}}</view>
+        <view>{{trains.fromCity}}</view>
+      </view>
+      <view class='list-top-two'>
+        <view>{{trains.usedTime}}</view>
+          <image src="/images/line.png"></image>
+        <view>{{trains.num}}</view>
+      </view>
+      <view class='list-top-three'>
+        <view>{{trains.toTime}}</view>
+        <view>{{trains.toCity}}</view>
+      </view>
+      <view class='list-top-four'>￥{{trains.price}}</view>
+    </view>
+    <view  class="ticket">
+      <text wx:for="{{trains.ticketInfo}}" wx:for-item="ticketInfo">{{ticketInfo.ticketName}}{{ticketInfo.ticketNum}}张</text>
+    </view>
+  </view>
+
+ 
+
+ 
+
+  
+  </view>
+  
+</view>

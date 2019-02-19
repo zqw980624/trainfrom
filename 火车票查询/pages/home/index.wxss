@@ -1,0 +1,51 @@
+/* pages/index.wxss */
+.container{
+  width: 100vw;
+  height: 100vh;
+  background-color: #ccc;
+}
+.bg image{
+  width: 100vw;
+}
+.query-from{
+  margin-top: 10px; 
+  display: block;
+  background-color: #fff;
+}
+.query-from .city{
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.query-from .city .transform{
+  height: 100%;
+}
+.query-from .city image{
+  width: 25px;
+  height: 25px;
+  padding: 0 20px;
+}
+.query-from .city input{
+  flex: 1;
+  width: 80px;
+  height: 100%;
+  border-bottom: 1px solid #ccc; 
+  font-weight: bold;
+}
+.time{
+  padding-top: 10px; 
+  display: flex;
+}
+.time picker{
+  flex: 1;
+  width: 100%;
+  text-align: center;
+   border-bottom: 1px solid #ccc; 
+}
+.btn button{
+  margin-top: 10px; 
+  width: 90%;
+  height: 40px;
+  background-color:#ff9a14;
+  color: white;
+}

@@ -1,0 +1,107 @@
+/* pages/home/list.wxss */
+.container{
+  background-color: #ccc;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.fixTop{
+  width: 100%;
+  background-color: #19a0f0;
+  height: 60px;
+  /* position: fixed;
+  z-index: 99; */
+}
+.fixTop .header{
+  padding: 30px 10px 10px 5px; 
+  color:#fff;
+  font-size: 12px;
+  
+}
+.fixTop image{
+  width: 20px;
+  height: 20px;
+   vertical-align: middle;
+}
+.fromTo{
+  padding:0 10px;
+  display: flex;
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  align-items: center;
+}
+.fromTo > view{
+  flex: 1;
+}
+.fromTo image{
+  width: 30px;
+  height: 30px;
+}
+.fromTo .city{
+  font-weight: bold;
+}
+.list{
+  margin-top: 8px; 
+  padding:10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.list .list-top{
+  
+  display: flex;
+  width: 100vw;
+ 
+ 
+  align-items: center;
+}
+.list .list-top view{
+  flex: 3;
+}
+.list .list-top view view:nth-child(2){
+  font-size: 12px;
+}
+.list .list-top .list-top-two{
+  position: relative;
+  flex: 2;
+}
+.list .list-top image{
+   position: absolute;
+  left: 0px;
+  top:0px;
+  width: 30px;
+  height: 30px;
+ 
+}
+.list .list-top .list-top-one{
+  text-align: left;
+}
+.list .list-top .blue{
+  color: #19a0f0;
+  font-weight: bold;
+  font-size: 20px;
+  
+}
+.list .list-top .list-top-two{
+  font-size: 12px;
+}
+.list .list-top .list-top-three{
+  text-align: right;
+}
+.list .list-top .list-top-four{
+  text-align: center;
+  font-weight: bold;
+ color:#ff9a14;
+}
+.list .ticket{
+  display: flex;
+}
+.list .ticket text{
+  width: 25%;
+  font-size: 12px;
+}
+.list-container{
+  width: 100vw;
+  height: calc(100vh - 100px);
+  overflow-y: scroll;
+}
